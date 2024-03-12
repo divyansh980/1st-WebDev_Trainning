@@ -1,0 +1,84 @@
+body{
+	margin:0;
+	background-color: black;
+}
+.div1
+{
+	height: 200px;
+	width: 200px;
+	border-color: darkslateblue;
+
+
+	position: absolute;
+	animation-name: animate;
+
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+
+}
+@keyframes animate{
+	0%{
+	   background-color:purple;
+	   top:0;
+	   left:0;
+	}
+25%
+{
+	background-color: rosybrown;
+	top:0;
+	left:400px;
+
+}	
+50%
+{
+	background-color: whitesmoke;
+	top:400px;
+	left:400px;
+}
+75%
+{
+	background-color: darkred;
+	top:400px;
+	left:0px;
+}
+100%
+{
+	background-color: pink;
+	top:0px;
+	left:0px;
+}
+}
+
+
+
+.slider
+{
+	height: 1000px;
+	background-image: url('hii.webp');
+	background-size: cover;
+	background-repeat:repeat;
+
+
+	animation-name: slider-img;
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+
+}
+
+@keyframes slider-img{
+	from
+	{
+		background-image:url('festival.webp') ;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+    to
+    {
+	    background-image: url('teachers.webp');
+	    background-size: cover;
+	    background-repeat:no-repeat;
+    }
+}
